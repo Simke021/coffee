@@ -266,6 +266,10 @@ body {
     font-size: 2rem;
   }
 
+  .service .img-service{
+    width: 50px;
+  }
+
   .service {
     background: rgba(249, 249, 249, 0.3);
     padding: 2rem;
