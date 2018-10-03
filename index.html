@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TRIO Cafe</title>
+    <title>TRIO Caffe | Welcome</title>
     <!--Font awesome icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Moneserat font-->
@@ -13,13 +13,13 @@
 </head>
 <body>
     <header class="showcase">
-        <div class="nav-container">
+        <div class="nav-container" id="navbar">
             <img src="logo2.png" alt="Logo" class="logo-nav">                   
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#service">Services</a></li>
+                    <li><a href="#">Home</a></li>                
                     <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
                     <li><a href="#contact-us">Contact</a></li>
                 </ul> 
             </nav>
@@ -29,71 +29,75 @@
             <div class="title">
                 <h1>Benvienutti</h1>
             </div>
-            <button class="button" onclick="window.location.href='https://www.google.com/'">Go to google :)</button>
+            <a href="#about" class="button">Let's begin</a>
         </div>
     </header>
     
-      <!-- Services -->
-      <section class="services" id="service">
-        <div class="container grid-3 center">
-          <div>           
-            <h3>Lorem 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
-          </div>
-          <div>
-            <h3>Lorem 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
-          </div>
-          <div> 
-            <h3>Lorem 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
-          </div>
-        </div>
-      </section>
-    
       <!-- About -->
-      <section class="about bg-light" id="about">
+    <section class="about bg-light" id="about">
         <div class="container">
           <div class="grid-2">
-            <div class="center">
-                <img src="logo3.png" class="logo" alt="Kafa">
+            <div class="about-us">
+                <h3>Welcome to Our <br> <span>Coffee Shop</span></h3>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam.</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>       
             </div>
-            <div>
-              <h3>About Us</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
-                similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
-                nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
-            </div>
+            <div class="center about-img">
+                    <img src="coffe.jpg" class="logo" alt="Kafa">
+                    <div class="price_desc">
+                        <div class="price">$1.99</div>
+                        <div class="price_text">
+                            <h4><span>* Today Special</span></h4>
+                        </div> 		      			  
+                    </div>
+                </div>
           </div>
         </div>
-      </section>
+    </section><hr id="service">
 
-      <section class="container-form" id="contact-us">
+    <!-- Services -->
+    <section class="services" >
+          <h2>Services</h2>
+            <div class="container grid-3 center">
+              <div class="service">           
+                <h3>TESTIMONIALS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+              <div class="service">
+                <h3>EVENTS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+              <div class="service"> 
+                <h3>RESERVATION</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span class="phone">+1 (234) 456-789</span>
+            </div>
+            </div>
+    </section><hr>
+
+    <!-- Contact -->
+    <section class="container-form" id="contact-us">
         <div class="container">
-            <form id="contact" action="#" method="post">
-                <h3>Contact US</h3>
-                    <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-                    </fieldset>
-                    <fieldset>
-                        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-            </form>
+            <h2>CONTACT US</h2>
+                <form action="/action_page.php">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                    <label for="lname">Tel:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your phone..">
+                
+                    <label for="subject">Message:</label>
+                    <textarea id="subject" name="subject" placeholder="Your question.." style="height:200px"></textarea>
+                  
+                    <input type="submit" value="Submit">
+                </form>
         </div>
-      </section>
+    </section>
     
     <footer class="center bg-dark">
         <p> Made with <img src="srce.gif" alt="srce"> Aleksandar Ljubišić &copy; 2018</p>
     </footer>
     
+    <script src="js/main.js"></script>
 </body>
 </html>
